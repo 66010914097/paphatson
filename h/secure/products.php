@@ -1,0 +1,91 @@
+<?php
+include_once("check_login.php");
+?>
+
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>จัดการสินค้า</title>
+
+<!-- Bootstrap 5.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f8f9fc;
+    }
+    .sidebar {
+        min-height: 100vh;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 bg-dark text-white sidebar p-3">
+            <h4 class="text-center mb-4">Admin Panel</h4>
+            <ul class="nav nav-pills flex-column gap-2">
+                <li class="nav-item">
+                    <a href="index2.php" class="nav-link text-white">หน้าหลักแอดมิน</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.php" class="nav-link active">จัดการสินค้า</a>
+                </li>
+                <li class="nav-item">
+                    <a href="orders.php" class="nav-link text-white">จัดการออเดอร์</a>
+                </li>
+                <li class="nav-item">
+                    <a href="customers.php" class="nav-link text-white">จัดการลูกค้า</a>
+                </li>
+                <li class="nav-item mt-3">
+                    <a href="logout.php" class="nav-link text-danger">ออกจากระบบ</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10 p-4">
+
+            <!-- Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold">จัดการสินค้า</h2>
+                <span class="badge bg-info text-dark">
+                    ผู้ดูแลระบบ: <?php echo $_SESSION['aname']; ?>
+                </span>
+            </div>
+
+            <!-- Content -->
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <p class="text-muted mb-3">
+                        หน้านี้ใช้สำหรับจัดการสินค้า (เพิ่ม / แก้ไข / ลบ)
+                    </p>
+
+                    <!-- ตัวอย่างปุ่ม -->
+                    <div class="mb-3 text-end">
+                        <a href="#" class="btn btn-primary">
+                            ➕ เพิ่มสินค้า
+                        </a>
+                    </div>
+
+                    <!-- Placeholder -->
+                    <div class="text-center text-secondary py-5">
+                        <p class="mb-0">📦 ตารางรายการสินค้า (กำลังพัฒนา)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap 5.3 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
