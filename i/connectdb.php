@@ -9,3 +9,4 @@ $conn = mysqli_connect($host, $user, $pwd, $db)
 
 mysqli_set_charset($conn, "utf8");
 ?>
+ 

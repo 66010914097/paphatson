@@ -16,7 +16,7 @@
     while($data = myaqli_fetch_array($rs)){
         echo $data['r_id']."". $data['r_name']. "<br>";
     }
-
+ 
 ?>
 
 </body>
