@@ -7,7 +7,7 @@
   
 <body>
 <h1>ข้อมูลจังหวัด -- ปภัสสร อุณวงค์ (BB)</h1>
-
+ 
 <form method="post" action="">
 	ชื่อจังหวัด<input type="text" name="pname" autofocus required><br>
     รูปภาพ <input type="file" name="pimage"><br>
