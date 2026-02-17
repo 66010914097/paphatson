@@ -50,7 +50,7 @@ if(isset($_POST['Submit'])){
         <th>รูปภาพ</th>
         <th>ภาค</th>
     </tr>
- 
+  
   <?php
     include_once("connectdb.php");
     $sql = "SELECT * FROM `provinces` AS p
