@@ -13,7 +13,7 @@
 <button type="submit" name="Submit">บันทึก</button>
 </form>
 <br>
- 
+  
 <?php
 if(isset($_POST['Submit'])){
 $rname = $_POST['rname']; // รับค่าจาก name="rname"
