@@ -1,11 +1,10 @@
-<meta charset="utf-8">
-
 <?php
-    include_once("connentdb.php");
-    $sql = "DELETE FROM  `regions` WHERE r_id='{$id}'";
-    mysqli_query($conn, $sql) or die ("ลบไม่ได้");
+include_once("connectdb.php");
 
-    echo"<script>";
-    echo"window.location='a.php';";
-    echo"/script>";
-?>   
+$id = $_GET['id'];
+
+$sql = "DELETE FROM regions WHERE r_id = '$id'";
+mysqli_query($conn, $sql) or die("ลบไม่ได้");
+
+echo "<script>window.location='a.php';</script>";
+?>
