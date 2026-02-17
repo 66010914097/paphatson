@@ -8,3 +8,4 @@ mysqli_query($conn, $sql) or die("ลบไม่ได้");
 
 echo "<script>window.location='a.php';</script>";
 ?>
+ 

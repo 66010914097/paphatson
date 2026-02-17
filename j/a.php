@@ -52,6 +52,6 @@ while ($data = mysqli_fetch_array($rs)) {
 </tr>
 <?php } ?>
 </table>
-
+ 
 </body>
 </html>

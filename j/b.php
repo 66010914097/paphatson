@@ -25,7 +25,7 @@
     <button type="submit" name="Submit">บันทึก</button>
 </form>
 <br>
-<br> 
+<br>  
      
 <?php
 if(isset($_POST['Submit'])){
