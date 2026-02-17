@@ -8,7 +8,7 @@
 <body>
 <h1>ข้อมูลจังหวัด -- ปภัสสร อุณวงค์ (BB)</h1>
 
-<form method="post" action="">
+<form method="post" action="" enctype="multipart/form-data">
 	ชื่อจังหวัด<input type="text" name="pname" autofocus required><br>
     รูปภาพ <input type="file" name="pimage"><br>
     ชื่อภาค 
@@ -26,13 +26,16 @@
 </form>
 <br>
 <br> 
- 
+   
 <?php
 if(isset($_POST['Submit'])){
     include_once("connectdb.php");
-	//$rname = $_POST['rname'];
-	//$sql2 = "INSERT INTO `regions` VALUES (NULL, '{$rname}')";
-	//mysqli_query($conn,$sql2) or die ("insert ไม่ได้");
+	$pname = $_POST['pname'];
+    $exp = pathinfo($_FILES['pimage']['name'], PATHINFO_EXTENSION);
+    $rid = $_POST['rid'];
+	$sql2 = "INSERT INTO `provinces` VALUES (NULL, '{$pname}','{$exp}','{$rid}')";
+	mysqli_query($conn,$sql2) or die ("insert ไม่ได้");
+    move_uploaded_file($_FILES['pimage']['tmp_name'],"img/".$pic_id.".".$ext);
 }
 ?>
 
