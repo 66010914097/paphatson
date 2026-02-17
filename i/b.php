@@ -12,7 +12,7 @@
 ชื่อจังหวัด: <input type="text" name="pname" autofocus required> <br>
 
 รูปภาพ: <input type="file" name="pimage" required> <br>
-  
+   
 ชื่อภาค:
 <select name="rid">
 <?php
