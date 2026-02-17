@@ -22,7 +22,7 @@ $result = mysqli_query($conn, $sql2) or die("insert ไม่ได้");
 echo "<script>window.location.href='a.php';</script>"; // รีเฟรชหน้าเพื่อให้ข้อมูลใหม่ขึ้นทันที
 }
 ?> 
-  
+   
 <table border="1">
 <tr>
 <th>รหัสภาค</th>
