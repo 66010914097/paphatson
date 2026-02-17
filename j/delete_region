@@ -8,4 +8,4 @@
     echo"<script>";
     echo"window.location='a.php';";
     echo"/script>";
-?> 
+?>  
